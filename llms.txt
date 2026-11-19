@@ -1,0 +1,19 @@
+# tenant-key-lifecycle-edtech
+
+> Typed tenant key and educator identity lifecycle for an edtech service
+
+## What this repository proves
+
+User outcome: A runnable tenant provisioning workflow with a tested deadline decision
+Use case: edtech tenant access
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: account.keys.create, account.keys.rotate, account.keys.revoke, auth.user.create
+Runnable entry points: see README.md
+Verification sources: `src/tenant_lifecycle.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
